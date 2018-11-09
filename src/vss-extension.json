@@ -1,0 +1,76 @@
+{
+    "manifestVersion": 1,
+    "id": "ARMOutputParserExtension",
+    "name": "ARM Template Output Converter extension",
+    "version": "1.0.0",
+    "publisher": "RasmusWatjen",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Converts ARM Template output into pipeline variables.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "images/extension-icon-square.png"
+    },
+    "tags": [
+        "releasemanagement",
+        "azurerm"
+    ],
+    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        },
+        {
+            "path": "images/settings.png",
+            "addressable": "true"
+        },
+        {
+            "path": "images/arm-deployment-output.png",
+            "addressable": "true"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "branding": {
+        "theme": "light",
+        "color": "rgb(255, 255, 255)"
+    },
+    "screenshots": [
+        {
+            "path": "images/settings.png"
+        }
+    ],
+    "links": {
+        "license": {
+            "uri": "https://raw.githubusercontent.com/rwatjen/ARMOutputParserVSTSExtension/development/LICENSE.txt"
+        },
+        "issues": {
+            "uri": "https://github.com/rwatjen/ARMOutputParserVSTSExtension/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/rwatjen/ARMOutputParserVSTSExtension"
+    },
+
+    "contributions": [
+        {
+            "id": "ARMOutputConverter",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ]
+}

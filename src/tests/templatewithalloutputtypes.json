@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "variables": {},
+    "resources": [
+    ],
+    "outputs": {
+        "arrayOutput": {
+            "type": "array",
+            "value": [ "a", "b", "c", "d"]
+        },
+        "boolOutputA": {
+            "type": "bool",
+            "value": true
+        },
+        "boolOutputB": {
+            "type": "bool",
+            "value": false
+        },
+        "intOutput": {
+            "type": "int",
+            "value": 98052
+        },
+        "objectOutput": {
+            "type": "object",
+            "value": { "objectPropertyA": "hello", "objectPropertyB": "world"}
+        },
+        "secureObjectOutput": {
+            "type": "secureObject",
+            "value":  { "objectPropertyA": "hello", "objectPropertyB": "world"}
+        },
+        "secureStringOutput": {
+            "type": "securestring",
+            "value": "this is a secure string"
+        },
+        "stringOutput": {
+            "type": "string",
+            "value": "this is a string"
+        }
+    }
+}
