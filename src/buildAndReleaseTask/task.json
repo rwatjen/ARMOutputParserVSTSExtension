@@ -7,13 +7,14 @@
     "helpMarkDown": "[More Information](http://bit.ly/2AVFVVn)",
     "category": "Utility",
     "visibility": [
+        "Build",
         "Release"
     ],
     "author": "Rasmus Wätjen",
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 1
     },
     "demands": [ "PowerShell" ],
     "instanceNameFormat": "Parse ARM Deployment Outputs into variables",

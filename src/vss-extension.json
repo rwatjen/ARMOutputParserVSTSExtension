@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "ARMOutputParserExtension",
     "name": "ARM Template Output Converter extension",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "RasmusWatjen",
     "public": true,
     "targets": [
